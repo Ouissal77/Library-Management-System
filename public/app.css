@@ -1,0 +1,337 @@
+td{
+    text-align: center;
+}
+tr th {
+    text-align: center;
+}
+body{
+    background-color: rgba(228, 238, 239, 0.89) !important;
+}
+.body{
+margin-top: 100px;
+}
+@media (min-width: 768px) {
+    .carousel-inner {
+        display: flex;
+        justify-content: space-around;
+    }
+    .carousel-item {
+        margin: auto;
+        flex: 0 0 33.333333%;
+        display: block;
+        justify-content: space-around;
+
+    }
+}
+
+.carousel-inner{
+
+    padding: 1em;
+
+}
+
+.card{
+    margin: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    padding:8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+background-color: rgba(241, 239, 239, 0.87);
+}
+.home-description{
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.home-description h1{
+   font-size: 23px;
+   font-family: Copernicus, "Libre Baskerville", Georgia, serif;
+
+}
+.home-description h5{
+    font-size: 19px;
+    font-family: 'Source Serif 4', serif;
+
+}
+
+.home-book{
+
+    display: flex;
+padding-bottom: 10px;
+    justify-content: center;
+
+}
+.home-bar{
+   display: flex;
+    align-items: center;
+
+}
+.card-img, .card-img-top {
+    border-radius: var(--bs-card-inner-border-radius);
+}
+.card img{
+    width: 55%;
+    height: 250px;
+    text-align: center;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.img-wrapper{
+    width: 100%;
+    height: 23vw;
+}
+
+/*************/
+.book-page{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+
+.book-title{
+    font-size: 3rem;
+    line-height: 4.6rem;
+    font-family: Copernicus,"Libre Baskerville",Georgia,serif;
+}
+.book-author{
+
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 500;
+}
+.book-categories{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+
+}
+.book-categories li a {
+    text-decoration: none;
+
+}
+.category-books{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/******* User Section    *******/
+
+/******* Nav Bar *******/
+.userNav{
+    display: flex;
+    gap: 30px;
+   align-items: center;
+    margin-left: 30px;
+}
+.userNav ul {
+    display: flex;
+    gap: 30px;
+    align-content: center;
+
+}
+li {
+    width: max-content;
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+input.searchBox{
+    width: 300px !important;
+}
+input.searchBox:focus{
+    box-shadow: none !important;
+    border-color: sandybrown !important;
+}
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+    /*font-family: 'Source Serif 4', serif;*/
+    font-weight: bold;
+    font-size: 28px !important;
+}
+.user-background{
+    margin:0 45px;
+    background-position: center center;
+
+}
+.quote{
+    position: relative;
+    opacity: 0.8;
+    background-color: darkblue;
+    background: url(" images/userImages/download.jpg");
+   height: 250px;
+   /*width: 90%;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+
+}
+.quote p{
+    font-family: 'Dancing Script', cursive;
+    /*font-family: 'Source Serif 4', serif;*/
+    font-weight: bold;
+    font-size: 34px ;
+    color: #ffffff;
+    width: 700px;
+    padding: 10px 40px;
+
+}
+.quote::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: rgba(50,0,20,0.15);
+}
+.book-borrow{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+.cover{
+display: flex;
+flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    height: 220px;
+    width: 155px;
+
+    position: relative; /* Add this to allow positioning of .img */
+    overflow: hidden;
+}
+.book-borrow button{
+    background-color: rgb(60, 145, 141);
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    color: whitesmoke;
+    border: none;
+}
+.img{
+    height: 100%;
+    width: 100%; /* Use 'max-width' instead of 'width' */
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute; /* Position the image absolutely within .cover */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.short-desctiption{
+    width: 80%;
+}
+.book-section{
+    display: flex;
+    gap: 50px;
+    margin-bottom:50px ;
+    align-items: center;
+
+}
+.small-book-title{
+    font-size: 2rem;
+
+    font-family: Copernicus,"Libre Baskerville",Georgia,serif;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.small-book-author{
+
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 300;
+}
+.detail{
+    margin-bottom: 10px;
+
+}
+.short-desctiption{
+    font-family:Roboto;
+    font-size: medium;
+}
+.status{
+    border-radius: 50px;
+    box-shadow: #4a5568;
+    width: max-content;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: whitesmoke;
+
+}
+.borrowed{
+background-color: rgba(189, 66, 99, 0.93);
+}
+.available{
+    background-color: rgb(59, 145, 141);
+}
+/**** Book details ***/
+.book-cover{
+    width: 200px;
+    height: 280px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+.book-details  {
+    width: 900px;
+
+}
+.book-details p {
+    width: 750px;
+    font-size: 16px;
+}
+.img-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 250px;
+}
+.user-status{
+    border-radius: 50px;
+    box-shadow: #4a5568;
+    border: #656464 solid 2px;
+    width: 100%;
+    padding: 6px 15px;
+    font-weight: bold;
+    color: #545252;
+    text-align: center;
+    background-color: transparent;
+    margin: 10px 0 0;
+
+
+}
+
+.user-form{
+    width: 100%;
+
+}
+.user-borrow:hover{
+    background-color: rgba(213, 216, 217, 0.87);
+}
